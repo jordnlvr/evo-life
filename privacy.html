@@ -26,7 +26,7 @@
     </section>
     <section aria-labelledby="use">
       <h2 id="use">How it’s used</h2>
-      <p>The metadata is checked to notice when a new bill notice has arrived. Only a “new bill notice arrived” signal is used locally to show a reminder on Kelly’s computer.</p>
+      <p>The metadata is checked on Kelly’s computer to notice when a new bill notice has arrived. The result is reduced to a simple signal: “new bill notice arrived” and the time it arrived. To decide whether one of Kelly’s reminders applies, that signal, together with Kelly’s own task title and reminder sentence (with numbers masked), may be sent to an AI model (Anthropic’s Claude). The sender, subject, message body and all other email content are never sent. The reminder is then shown on Kelly’s computer.</p>
     </section>
     <section aria-labelledby="never">
       <h2 id="never">What is never done</h2>
@@ -38,7 +38,7 @@
     </section>
     <section aria-labelledby="sharing">
       <h2 id="sharing">Sharing</h2>
-      <p>Data is never sold or shared. No message content or headers are shared with anyone, including AI services. Only the “new bill notice arrived” signal is used locally.</p>
+      <p>Data is never sold or shared. No message content or headers (sender, subject, body) are shared with anyone, including AI services. The only thing derived from Gmail that leaves Kelly’s computer is the “new bill notice arrived” signal and its time, sent to an AI model as described above.</p>
     </section>
     <section aria-labelledby="control">
       <h2 id="control">Your control / revoking access</h2>
