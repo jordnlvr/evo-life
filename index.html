@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Evo Life is Kelly Seale's personal reminder tool. It checks Gmail message metadata once a day for new bill notices and shows reminders on his own computer.">
+  <meta name="description" content="Evo Life and Evo Google are Kelly Seale’s personal tools on his own computer, using his Google account for reminders and approved productivity features.">
   <title>Evo Life</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318191c'/%3E%3Cpath d='m9 16 5 5 9-10' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
@@ -18,23 +18,26 @@
     </nav>
   </header>
   <main id="main" class="wrap content" tabindex="-1">
-    <h1>Evo Life</h1>
-    <p class="intro">Evo Life is Kelly Seale’s personal reminder tool on his own computer. Once a day, it checks the sender, subject and date of messages in his own Gmail inbox to notice new bill notices, then shows a reminder on his computer. It is not offered to the public, and only Kelly can sign in.</p>
+    <h1>Evo Life and Evo Google</h1>
+    <p class="intro">Evo Life and Evo Google are Kelly Seale’s personal tools on his own computer. They use his own Google account for Calendar, Tasks, Contacts, Gmail, and Drive files Evo creates or that Kelly explicitly authorizes for the app. They are not offered to the public.</p>
     <section aria-labelledby="does">
       <h2 id="does">What it does</h2>
       <ul>
-        <li>Checks one Gmail inbox, Kelly’s own, with read-only access.</li>
-        <li>Turns what it finds into a simple “new bill notice arrived” signal, and shows a reminder on Kelly’s computer.</li>
-        <li>Keeps data on Kelly’s computer and the sign-in token in his password manager.</li>
+        <li>Evo Life checks Gmail sender, subject and date metadata locally to produce a bill-reminder signal. It does not fetch message bodies or attachments. Only the signal and its time, with Kelly’s own task title and reminder sentence (numbers masked), may go to an AI model to decide whether a reminder applies.</li>
+        <li>Evo Google supports features for reading, creating or updating calendar events, tasks and contacts; sending email; managing Gmail label definitions; and working with Evo-created or app-authorized Drive files, documents and spreadsheets. Optional YouTube access is read-only.</li>
+        <li>Kelly grants permissions in advance; each is used only by a feature that has been built and turned on.</li>
+        <li>Email is sent from Kelly’s address and visibly identified as sent by Evo. Messages to Kelly’s verified own addresses may be automatic. Sends to others, sharing and deletion need Kelly’s approval for the action or a named process he approved.</li>
+        <li>AI-assisted features may send the minimum necessary information to an approved AI provider, with masking and privacy checks. Optional Telegram approvals use brief notifications and approval links.</li>
+        <li>Stores Google sign-in credentials in Kelly’s 1Password vault and connector data locally, with retention limits described in the privacy policy.</li>
       </ul>
     </section>
     <section aria-labelledby="does-not">
       <h2 id="does-not">What it doesn’t do</h2>
       <ul>
-        <li>Read message bodies or attachments.</li>
-        <li>Send, change, move or delete email.</li>
-        <li>Share message content or headers (sender, subject, body) with anyone, including AI services.</li>
-        <li>Sell or share data, or use it for advertising.</li>
+        <li>Offer a public sign-in service or access Google services Kelly has not authorized.</li>
+        <li>Send the sender, subject or other email content from Evo Life’s bill-reminder reader to an AI model.</li>
+        <li>Treat Google permissions or incoming mail as approval to act. Sends to others require Kelly’s approval or a named process he approved.</li>
+        <li>Use Google-derived information to train general-purpose AI models, for advertising, or for sale.</li>
       </ul>
     </section>
     <div class="page-links">

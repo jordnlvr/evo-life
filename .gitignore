@@ -1,1 +1,3 @@
 screens/
+*.bak-*
+HISTORY.md
